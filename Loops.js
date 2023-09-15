@@ -180,15 +180,20 @@ var colorIndex2=prompt("Enter the index from which you want to delete the colors
 var colorRemove=prompt("Enter the amount of colors you want to remove ",1);
 colorNames.splice(colorIndex2,colorRemove);
 document.write(`${colorNames.join(" , ")} <br>`);
+document.write("<br>");
+
 
 //Q10
 let studentScore=[100,98,75,86,54,89,71,60,18];
 document.write(`Score of students: ${studentScore}<br>`);
+
 document.write(`The ordered score of students: ${studentScore.sort(function(a, b){return a - b})}<br>`);
+document.write("<br>");
 
 //Q11
 let cityNames=["Karachi","Islamabad","Quetta","Peshawar","Lahore"];
 document.write(`${cityNames.join(" , ")}<br>`);
+
 let selectedCityNames=`${cityNames.slice(1,4)}<br>`;
 document.write(selectedCityNames);
 document.write("<br>");
@@ -197,7 +202,10 @@ document.write("<br>");
 //Q12
 let myArray=["This","is","my","cat"];
 document.write(`${myArray}<br>`);
+
 document.write(`${myArray.join(" ")}<br>`);
+document.write("<br>");
+
 
 //Q13
 let newArray=[];
