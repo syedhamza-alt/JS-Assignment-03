@@ -167,4 +167,43 @@ document.write(`${colorNames.join(" , ")} <br>`);
 
 //Q10
 let studentScore=[100,98,75,86,54,89,71,60,18];
-studentScore.sort();
+document.write(`Score of students: ${studentScore}<br>`);
+document.write(`The ordered score of students: ${studentScore.sort(function(a, b){return a - b})}<br>`);
+
+//Q11
+let cityNames=["Karachi","Islamabad","Quetta","Peshawar","Lahore"];
+document.write(`${cityNames.join(" , ")}<br>`);
+let selectedCityNames=`${cityNames.slice(1,4)}<br>`;
+document.write(selectedCityNames);
+
+//Q12
+let myArray=["This","is","my","cat"];
+document.write(`${myArray}<br>`);
+document.write(`${myArray.join(" ")}<br>`);
+
+//Q13
+let newArray=[];
+newArray[0]="Keyboard";
+newArray[1]="Mouse";
+newArray[2]="Monitor";
+newArray[3]="CPU";
+newArray[4]="Camera";
+var storingValues=" ";
+for(var i=0; i < newArray.length; i++){
+    storingValues+=`${newArray[i]}<br>`;
+}
+document.write(storingValues);
+
+//Q14
+let newArray2=[];
+newArray2[0]="Keyboard";
+newArray2[1]="Mouse";
+newArray2[2]="Monitor";
+newArray2[3]="CPU";
+newArray2[4]="Camera";
+var storingValues2=" ";
+newArray2.reverse();
+for(var i=0; i < newArray.length; i++){
+    storingValues2+=`${newArray2[i]}<br>`;
+}
+document.write(storingValues2);
